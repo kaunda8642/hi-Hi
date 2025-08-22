@@ -19,7 +19,7 @@ int strcmp_case_insensitive(const char* s1, const char* s2) {
         char c2 = to_lower(*s2);
 
         if (c1 != c2) {
-            return c1 - c2;
+            return c1 - c2
         }
 
         s1++;
@@ -46,5 +46,6 @@ int main() {
     assert(strcmp_case_insensitive("Case", "case") == 0);
     assert(strcmp_case_insensitive("case", "Cases") < 0);
 }
+
 
 
